@@ -4,6 +4,8 @@ export const products = [
   {
     name: 'LENOVO YOGA',
     brand: 'LENOVO',
+    model: 'C640',
+    makat: '1',
     image: 'images/cmp1.jpg',
     category: 'Computers',
     price: '4450',
@@ -19,6 +21,8 @@ export const products = [
   {
     name: 'HP laptop',
     brand: 'HP',
+    model: 'C640',
+    makat: '1',
     image: 'images/cmp1.jpg',
     category: 'Computers',
     price: '4000',
@@ -34,6 +38,8 @@ export const products = [
   {
     name: 'LG new laptop',
     brand: 'LG',
+    model: 'C640',
+    makat: '1',
     image: 'images/cmp1.jpg',
     category: 'Computers',
     price: '1950',
@@ -49,6 +55,8 @@ export const products = [
   {
     name: 'Samsung pro',
     brand: 'Samsung',
+    model: 'C640',
+    makat: '1',
     image: 'images/cmp1.jpg',
     category: 'Computers',
     price: '2750',
@@ -64,6 +72,8 @@ export const products = [
   {
     name: 'Lenovo pro',
     brand: 'Lenovo',
+    model: 'C640',
+    makat: '1',
     image: 'images/cmp1.jpg',
     category: 'Computers',
     price: '11000',
@@ -79,6 +89,8 @@ export const products = [
   {
     name: 'Toshiba pro',
     brand: 'Toshiba',
+    model: 'C640',
+    makat: '1',
     image: 'images/cmp1.jpg',
     category: 'Computers',
     price: '2100',
@@ -94,6 +106,8 @@ export const products = [
   {
     name: 'Apple pro',
     brand: 'Apple',
+    model: 'C640',
+    makat: '1',
     image: 'images/cmp1.jpg',
     category: 'Computers',
     price: '8100',
