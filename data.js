@@ -9,7 +9,7 @@ export const products = [
     image: 'images/cmp1.jpg',
     category: 'Computers',
     price: '4450',
-    countInStock: 3,
+    countInStock: 4,
     detail: {
       CPUmodel: 'i7',
       hardDiskSize: '512',
@@ -26,7 +26,7 @@ export const products = [
     image: 'images/cmp1.jpg',
     category: 'Computers',
     price: '4000',
-    countInStock: 7,
+    countInStock: 4,
     detail: {
       CPUmodel: 'i7',
       hardDiskSize: '512',
@@ -43,7 +43,7 @@ export const products = [
     image: 'images/cmp1.jpg',
     category: 'Computers',
     price: '1950',
-    countInStock: 2,
+    countInStock: 4,
     detail: {
       CPUmodel: 'i7',
       hardDiskSize: '512',
@@ -77,7 +77,7 @@ export const products = [
     image: 'images/cmp1.jpg',
     category: 'Computers',
     price: '11000',
-    countInStock: 3,
+    countInStock: 4,
     detail: {
       CPUmodel: 'i7',
       hardDiskSize: '512',
@@ -94,7 +94,7 @@ export const products = [
     image: 'images/cmp1.jpg',
     category: 'Computers',
     price: '2100',
-    countInStock: 3,
+    countInStock: 4,
     detail: {
       CPUmodel: 'i7',
       hardDiskSize: '512',
@@ -111,7 +111,7 @@ export const products = [
     image: 'images/cmp1.jpg',
     category: 'Computers',
     price: '8100',
-    countInStock: 3,
+    countInStock: 4,
     detail: {
       CPUmodel: 'i7',
       hardDiskSize: '512',
