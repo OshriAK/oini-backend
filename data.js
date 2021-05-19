@@ -19,6 +19,24 @@ export const products = [
       operatingSystem: 'Windows 10 Home',
     },
   },
+  {
+    name: 'LENOVO YOGA',
+    brand: 'LENOVO',
+    model: 'C740',
+    makat: '81TC000JUS',
+    image: 'images/C740-81TC000JUS.jpg',
+    category: 'Computers',
+    price: '3510',
+    countInStock: 4,
+    isNewComputer: 'yes',
+    detail: {
+      CPUmodel: 'i5',
+      hardDiskSize: '256',
+      computerMemorySize: '8',
+      screenSize: '14',
+      operatingSystem: 'Windows 10 Home',
+    },
+  },
 ];
 
 export const users = [
