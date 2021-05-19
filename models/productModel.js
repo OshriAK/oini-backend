@@ -10,7 +10,7 @@ const productSchema = new mongoose.Schema(
     category: { type: String, required: true },
     price: { type: Number, required: true },
     countInStock: { type: Number, required: true },
-    isNew: { type: Boolean, required: true },
+    isNewComputer: { type: String, required: true },
     detail: {
       CPUmodel: { type: String, required: true },
       hardDiskSize: { type: String, required: true },

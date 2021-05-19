@@ -10,7 +10,7 @@ export const products = [
     category: 'Computers',
     price: '3490',
     countInStock: 4,
-    new: true,
+    isNewComputer: 'yes',
     detail: {
       CPUmodel: 'i7',
       hardDiskSize: '512',
