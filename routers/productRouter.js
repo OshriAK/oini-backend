@@ -16,7 +16,7 @@ productRouter.get(
 productRouter.get(
   '/seed',
   expressAsyncHandler(async (req, res) => {
-    await Product.deleteMany();
+    await Product.remove({});
     const createdProducts = await Product.insertMany(products);
     res.send({ createdProducts });
   })
