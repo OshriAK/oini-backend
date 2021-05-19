@@ -15,7 +15,7 @@ const productSchema = new mongoose.Schema(
       CPUmodel: { type: String, required: true },
       hardDiskSize: { type: String, required: true },
       computerMemorySize: { type: String, required: true },
-      screenSize: { type: String, required: true },
+      screen: { type: String, required: true },
       operatingSystem: { type: String, required: true },
     },
   },
