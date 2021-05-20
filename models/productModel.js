@@ -8,8 +8,8 @@ const productSchema = new mongoose.Schema(
     makat: { type: String, required: true, unique: true },
     image: { type: String },
     category: { type: String, required: true },
-    price: { type: Number, required: true },
-    countInStock: { type: Number, required: true },
+    price: { type: String, required: true },
+    countInStock: { type: String, required: true },
     isNewComputer: { type: String, required: true },
     detail: {
       CPUmodel: { type: String, required: true },
