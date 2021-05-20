@@ -27,21 +27,21 @@ productRouter.post(
   expressAsyncHandler(async (req, res) => {
     console.log('req.body', req.body);
     const product = new Product({
-      name: req.body.product.name,
-      brand: req.body.product.brand,
-      model: req.body.product.model,
-      makat: req.body.product.makat,
-      // image: req.body.image,
-      category: req.body.product.category,
-      price: req.body.product.price,
-      countInStock: req.body.product.countInStock,
-      isNewComputer: req.body.product.isNewComputer,
+      name: req.body.newProduct.name,
+      brand: req.body.newProduct.brand,
+      model: req.body.newProduct.model,
+      makat: req.body.newProduct.makat,
+      // image: req.body.newProduct.image,
+      category: req.body.newProduct.category,
+      price: req.body.newProduct.price,
+      countInStock: req.body.newProduct.countInStock,
+      isNewComputer: req.body.newProduct.isNewComputer,
       detail: {
-        CPUmodel: req.body.product.CPUmodel,
-        hardDiskSize: req.body.product.hardDiskSize,
-        computerMemorySize: req.body.product.computerMemorySize,
-        screen: req.body.product.screen,
-        operatingSystem: req.body.product.operatingSystem,
+        CPUmodel: req.body.newProduct.CPUmodel,
+        hardDiskSize: req.body.newProduct.hardDiskSize,
+        computerMemorySize: req.body.newProduct.computerMemorySize,
+        screen: req.body.newProduct.screen,
+        operatingSystem: req.body.newProduct.operatingSystem,
       },
     });
     const createdProduct = await product.save();
