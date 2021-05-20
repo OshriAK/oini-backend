@@ -125,6 +125,24 @@ export const products = [
   //     operatingSystem: 'Windows 10 Home',
   //   },
   // },
+  {
+    name: 'LENOVO 15IIL05 2IN1',
+    brand: 'LENOVO',
+    model: 'FLX15',
+    makat: '81X3000VUS',
+    image: 'images/FLX15-81X3000VUS.jpg',
+    category: 'Computers',
+    price: '3580',
+    countInStock: 4,
+    isNewComputer: 'yes',
+    detail: {
+      CPUmodel: 'I7-1065',
+      hardDiskSize: '512',
+      computerMemorySize: '16',
+      screen: 'מגע, מתהפך, 15 אינץ',
+      operatingSystem: 'Windows 10 Home',
+    },
+  },
 ];
 
 export const users = [
