@@ -35,4 +35,30 @@ productRouter.get(
   })
 );
 
+productRouter.post(
+  '/addproduct',
+  expressAsyncHandler(async (req, res) => {
+    const product = new Product({
+      name: req.body.product.name,
+      brand: req.body.product.brand,
+      model: req.body.product.model,
+      makat: req.body.product.makat,
+      // image: req.body.image,
+      category: req.body.product.category,
+      price: req.body.product.price,
+      countInStock: req.body.product.countInStock,
+      isNewComputer: req.body.product.isNewComputer,
+      CPUmodel: req.body.product.CPUmodel,
+      hardDiskSize: req.body.product.hardDiskSize,
+      computerMemorySize: req.body.product.computerMemorySize,
+      screen: req.body.product.screen,
+      operatingSystem: req.body.product.operatingSystem,
+    });
+    const createdProduct = await product.save();
+    res.send({
+      createdProduct: createdProduct,
+    });
+  })
+);
+
 export default productRouter;

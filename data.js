@@ -107,24 +107,24 @@ export const products = [
   //     operatingSystem: 'Windows 10 Home',
   //   },
   // },
-  {
-    name: 'LENOVO 2IN1',
-    brand: 'LENOVO',
-    model: 'FLEX5',
-    makat: '81X2000HUS',
-    image: 'images/FLEX5-81X2000HUS.jpg',
-    category: 'Computers',
-    price: '2385',
-    countInStock: 4,
-    isNewComputer: 'yes',
-    detail: {
-      CPUmodel: 'RYZEN-4300',
-      hardDiskSize: '128',
-      computerMemorySize: '4',
-      screen: 'מגע, מתהפך, 14 אינץ',
-      operatingSystem: 'Windows 10 Home',
-    },
-  },
+  // {
+  //   name: 'LENOVO 2IN1',
+  //   brand: 'LENOVO',
+  //   model: 'FLEX5',
+  //   makat: '81X2000HUS',
+  //   image: 'images/FLEX5-81X2000HUS.jpg',
+  //   category: 'Computers',
+  //   price: '2385',
+  //   countInStock: 4,
+  //   isNewComputer: 'yes',
+  //   detail: {
+  //     CPUmodel: 'RYZEN-4300',
+  //     hardDiskSize: '128',
+  //     computerMemorySize: '4',
+  //     screen: 'מגע, מתהפך, 14 אינץ',
+  //     operatingSystem: 'Windows 10 Home',
+  //   },
+  // },
 ];
 
 export const users = [

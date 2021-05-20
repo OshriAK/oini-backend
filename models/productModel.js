@@ -6,7 +6,7 @@ const productSchema = new mongoose.Schema(
     brand: { type: String, required: true },
     model: { type: String, required: true },
     makat: { type: String, required: true, unique: true },
-    image: { type: String, required: true },
+    image: { type: String },
     category: { type: String, required: true },
     price: { type: Number, required: true },
     countInStock: { type: Number, required: true },
