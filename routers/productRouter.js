@@ -25,6 +25,7 @@ productRouter.get(
 productRouter.post(
   '/addproduct',
   expressAsyncHandler(async (req, res) => {
+    console.log('req.body', req.body);
     const product = new Product({
       name: req.body.product.name,
       brand: req.body.product.brand,
@@ -35,11 +36,13 @@ productRouter.post(
       price: req.body.product.price,
       countInStock: req.body.product.countInStock,
       isNewComputer: req.body.product.isNewComputer,
-      CPUmodel: req.body.product.CPUmodel,
-      hardDiskSize: req.body.product.hardDiskSize,
-      computerMemorySize: req.body.product.computerMemorySize,
-      screen: req.body.product.screen,
-      operatingSystem: req.body.product.operatingSystem,
+      detail: {
+        CPUmodel: req.body.product.CPUmodel,
+        hardDiskSize: req.body.product.hardDiskSize,
+        computerMemorySize: req.body.product.computerMemorySize,
+        screen: req.body.product.screen,
+        operatingSystem: req.body.product.operatingSystem,
+      },
     });
     const createdProduct = await product.save();
     res.send({
