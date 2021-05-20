@@ -22,19 +22,6 @@ productRouter.get(
   })
 );
 
-productRouter.get(
-  '/:id',
-  expressAsyncHandler(async (req, res) => {
-    const currentProduct = await Product.findById(req.params.id);
-
-    if (currentProduct) {
-      res.send(currentProduct);
-    } else {
-      res.status(404).send('Product Not Found');
-    }
-  })
-);
-
 productRouter.post(
   '/addproduct',
   expressAsyncHandler(async (req, res) => {
@@ -58,6 +45,19 @@ productRouter.post(
     res.send({
       createdProduct: createdProduct,
     });
+  })
+);
+
+productRouter.get(
+  '/:id',
+  expressAsyncHandler(async (req, res) => {
+    const currentProduct = await Product.findById(req.params.id);
+
+    if (currentProduct) {
+      res.send(currentProduct);
+    } else {
+      res.status(404).send('Product Not Found');
+    }
   })
 );
 
