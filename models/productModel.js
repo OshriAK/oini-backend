@@ -4,7 +4,7 @@ const productSchema = new mongoose.Schema(
   {
     name: { type: String, required: true },
     brand: { type: String, required: true },
-    model: { type: String, required: true },
+    model: { type: String },
     makat: { type: String, required: true, unique: true },
     image: { type: String },
     category: { type: String, required: true },
@@ -12,12 +12,13 @@ const productSchema = new mongoose.Schema(
     countInStock: { type: String, required: true },
     isNewComputer: { type: String, required: true },
     officialImporter: { type: String, required: true },
+    description: { type: String },
     detail: {
-      CPUmodel: { type: String, required: true },
-      hardDiskSize: { type: String, required: true },
-      computerMemorySize: { type: String, required: true },
-      screen: { type: String, required: true },
-      operatingSystem: { type: String, required: true },
+      CPUmodel: { type: String },
+      hardDiskSize: { type: String },
+      computerMemorySize: { type: String },
+      screen: { type: String },
+      operatingSystem: { type: String },
     },
   },
   {

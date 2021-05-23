@@ -1,6 +1,7 @@
 import express from 'express';
 import expressAsyncHandler from 'express-async-handler';
 import { products } from '../data.js';
+import { benefits } from '../data.js';
 import Product from '../models/productModel.js';
 
 const productRouter = express.Router();
@@ -18,6 +19,7 @@ productRouter.get(
   expressAsyncHandler(async (req, res) => {
     // await Product.remove({});
     const createdProducts = await Product.insertMany(products);
+    createdProducts.push(await Product.insertMany(benefits));
     res.send({ createdProducts });
   })
 );
@@ -30,7 +32,7 @@ productRouter.post(
       brand: req.body.brand,
       model: req.body.model,
       makat: req.body.makat,
-      image: 'req.body.image',
+      image: req.body.image,
       category: req.body.category,
       price: req.body.price,
       countInStock: req.body.countInStock,
