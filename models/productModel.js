@@ -10,8 +10,8 @@ const productSchema = new mongoose.Schema(
     category: { type: String, required: true },
     price: { type: String, required: true },
     countInStock: { type: String, required: true },
-    isNewComputer: { type: String, required: true },
-    officialImporter: { type: String, required: true },
+    isNewComputer: { type: String },
+    officialImporter: { type: String },
     description: { type: String },
     detail: {
       CPUmodel: { type: String },
