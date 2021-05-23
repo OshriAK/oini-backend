@@ -360,7 +360,7 @@ export const benefits = [
   {
     name: 'עכבר אלחוטי שחור Lenovo 310',
     brand: 'Lenovo',
-    makat: '',
+    makat: '8',
     image: 'images/benefits/mouse-lenovo310.jpg',
     category: 'Benefits',
     price: '60',
@@ -370,7 +370,7 @@ export const benefits = [
   {
     name: 'תיק צד למחשב',
     brand: 'Gold Touch',
-    makat: '8',
+    makat: '9',
     image: 'images/benefits/backpack-zad.jpg',
     category: 'Benefits',
     price: '40',
@@ -380,7 +380,7 @@ export const benefits = [
   {
     name: 'תיק גב למחשב',
     brand: 'Gold Touch',
-    makat: '9',
+    makat: '10',
     image: 'images/benefits/backpack-gav.jpg',
     category: 'Benefits',
     price: '129',
