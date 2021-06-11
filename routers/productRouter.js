@@ -1,70 +1,20 @@
 import express from 'express';
-import expressAsyncHandler from 'express-async-handler';
-import { products } from '../data.js';
-import { benefits } from '../data.js';
-import Product from '../models/productModel.js';
+
+import {
+  getAllProducts,
+  seedProducts,
+  addProduct,
+  findProductById,
+} from '../controllers/productsControllers.js';
 
 const productRouter = express.Router();
 
-productRouter.get(
-  '/',
-  expressAsyncHandler(async (req, res) => {
-    const products = await Product.find({});
-    res.send(products);
-  })
-);
+productRouter.get('/', getAllProducts);
 
-productRouter.get(
-  '/seed',
-  expressAsyncHandler(async (req, res) => {
-    // await Product.remove({});
-    const createdProducts = await Product.insertMany(products);
-    createdProducts.push(await Product.insertMany(benefits));
-    res.send({ createdProducts });
-  })
-);
+productRouter.get('/seed', seedProducts);
 
-productRouter.post(
-  '/addproduct',
-  expressAsyncHandler(async (req, res) => {
-    const product = new Product({
-      name: req.body.name,
-      brand: req.body.brand,
-      model: req.body.model,
-      makat: req.body.makat,
-      image: req.body.image,
-      category: req.body.category,
-      price: req.body.price,
-      countInStock: req.body.countInStock,
-      isNewComputer: req.body.isNewComputer,
-      officialImporter: req.body.officialImporter,
-      detail: {
-        CPUmodel: req.body.CPUmodel,
-        hardDiskSize: req.body.hardDiskSize,
-        computerMemorySize: req.body.computerMemorySize,
-        screen: req.body.screen,
-        operatingSystem: req.body.operatingSystem,
-      },
-    });
+productRouter.post('/addproduct', addProduct);
 
-    const createdProduct = await product.save();
-    res.send({
-      createdProduct: createdProduct,
-    });
-  })
-);
-
-productRouter.get(
-  '/:id',
-  expressAsyncHandler(async (req, res) => {
-    const currentProduct = await Product.findById(req.params.id);
-
-    if (currentProduct) {
-      res.send(currentProduct);
-    } else {
-      res.status(404).send('Product Not Found');
-    }
-  })
-);
+productRouter.get('/:id', findProductById);
 
 export default productRouter;
